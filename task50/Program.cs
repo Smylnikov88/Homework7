@@ -11,6 +11,8 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите размер столбцов");
 int n = Convert.ToInt32(Console.ReadLine());
 int[,] array = new int[m, n];
+Console.WriteLine();
+
  
 for (int i = 0; i < array.GetLength(0); i++) 
 {
@@ -34,6 +36,6 @@ Console.WriteLine();
  Console.WriteLine("такого числа нет");
  else
  {
- object c = array.GetValue(a,b);
+ object c = array.GetValue(a,b)!;
  Console.WriteLine(c);
  }
